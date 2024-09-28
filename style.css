@@ -1,0 +1,88 @@
+body {
+    font-family: 'Seigo UI', sans-serif;
+    background-color: #f9f6f1; /* 明るいクリーム色 */
+    color: #3b2a1e; /* 深い茶色 */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #6a4e4c; /* 落ち着いた赤 */
+}
+
+form {
+    margin: 20px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+}
+
+form div label {
+    flex: 0 0 150px; /* ラベルの幅を固定 */
+    margin-right: 10px; /* 入力枠とのスペース */
+    /* text-align: right; ラベルを右寄せ */
+}
+
+form div input,
+form div textarea {
+    flex: 1; /* 残りのスペースを入力枠が占有 */
+    min-width: 0; /* これを設定することで柔軟にサイズ調整 */
+    padding: 10px;
+    border: 1px solid #c7c7c7; /* 薄いグレー */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #6a4e4c; /* フォーカス時の色 */
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #6a4e4c; /* 落ち着いた赤 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5b3f3b; /* ホバー時の色 */
+}
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #c7c7c7;
+}
+
+th {
+    background-color: #e6d7d2; /* 明るいクリーム色 */
+    color: #6a4e4c; /* 落ち着いた赤 */
+}
+
+tr:nth-child(even) {
+    background-color: #f1ece9; /* 薄いベージュ */
+}
+
+tr:hover {
+    background-color: #f0d5d1; /* ホバー時の薄い赤 */
+}
